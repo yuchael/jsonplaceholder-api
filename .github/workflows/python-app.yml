@@ -1,10 +1,10 @@
-name: Fetch Todos Pipeline
+name: Jsonplaceholder
 
 on:
   push:
     branches: [ "main" ]
   schedule:
-    - cron: "*/5 * * * *"   # 5분마다 실행
+    - cron: "*/5 * * * *" 
 
 jobs:
   fetch:
@@ -23,7 +23,7 @@ jobs:
         run: pip install requests
 
       - name: Run script
-        run: python fetch_todos.py
+        run: python Jsonplaceholder.py
 
       - name: Commit and push changes
         run: |
