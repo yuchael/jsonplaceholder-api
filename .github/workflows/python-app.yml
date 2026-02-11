@@ -31,4 +31,4 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add data/chaerin_test.json
           git commit -m "Update todos data" || echo "No changes to commit"
-          git push
+          git push 
